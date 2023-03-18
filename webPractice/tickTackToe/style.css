@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    background-color: aliceblue;
+
+    align-items: center;
+}
+
+h1{
+    font-size: 7vh;
+}
+
+#info{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-bottom: 5%;
+}
+    #gInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+#bod{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vh;
+    height: 50vh;
+    justify-content: space-between;
+
+    background-color: black;
+}
+
+    .box{
+        background-color: red;
+        width: 30%;
+        aspect-ratio: 1 / 1;
+
+        font-size: 500%;
+        text-align: center;
+        line-height: 120px;
+    }
+
+        .row1{
+            align-self: flex-start;
+        }
+
+        .row2{
+            align-self: center;
+        }
+
+        .row3{
+            align-self: flex-end;
+        }

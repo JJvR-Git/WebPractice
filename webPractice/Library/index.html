@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="libV2.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to my library</h1>
+
+    <button onclick="openForm()" id="addBook" class="button-3">Add Book</button>
+
+    <form id="bookForm" style="display: none">
+        <div id="inputs">
+            <h1 id="call">Create new book</h1>
+            <div class="input">
+                <label for="title">Title</label><br>
+                <input class="inBox" type="text" id="title" name="title" placeholder="The Lord of the..." required></input><br>
+            </div>
+            <div class="input">
+                <label for="auther">Last Name</label><br>
+                <input class="inBox" type="text" id="auther" name="auther" minlength="2" placeholder="J.R.R" required></input><br>
+            </div>
+            <div class="input">
+                <label for="year">Year</label><br>
+                <input class="inBox" type="number" id="year" name="year" placeholder="1984" maxlength="4" required></input><br>
+            </div>
+            <div class="input">
+                <label for="pages">Pages</label><br>
+                <input class="inBox" type="number" name="pages" required></input><br>
+            </div>
+            <div id="chekbox" class="input">
+                <label for="read">Read</label><br>
+                <input class="inBox" type="checkbox" id="read" name="read" required></input><br>
+            </div>
+        </div>
+        <buttot onclick="checkValid()" class="button-3">Submit</buttot>
+        <p id="valid">All fields are not valid</p>
+    </form>
+
+    <div class="book" id="topper">
+        <h3>Title</h3>
+        <h3>Auther</h3>
+        <h3>Year</h3>
+        <h3>Pages</h3>
+        <h3>Read</h3>
+        <h3>Remove Book</h3>
+        <h3>Toggle Read</h3>
+    </div>
+    <div id="bookshelf">
+        
+    </div>
+    
+</body>
+</html>

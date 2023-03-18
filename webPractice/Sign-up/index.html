@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="bigPic">
+        <div id="left">
+            <img id="leaf" src="assets/halie-west-25xggax4bSA-unsplash.jpg" alt="Fern">
+            <div id="logo">
+                <img id="logoPic" src="assets/odin-lined.png" alt="Odin lined face">
+                <h1 id="logoText">Odin</h1>
+            </div>
+        </div>
+        <div id="right">
+            <div id="top">
+                <h2>This might not be a real service, but can you Imagine anything better?</h2>
+                <h2>Sign up now, the world is waiting!</h2>
+            </div>
+            <form onclick="checkValid()" action="#" method="get">       
+                <div id="inputs">
+                    <h1 id="call">Lets Goooo</h1>
+                    <div class="input">
+                        <label for="fname">First Name</label><br>
+                        <input class="inBox" type="text" id="fname" name="fname" minlength="2" placeholder="Bob" required></input><br>
+                    </div>
+                    <div class="input">
+                        <label for="lname">Last Name</label><br>
+                        <input class="inBox" type="text" id="lname" name="lname" minlength="2" placeholder="Sagget" required></input><br>
+                    </div>
+                    <div class="input">
+                        <label for="email">e-mail</label><br>
+                        <input class="inBox" type="email" id="email" name="email" placeholder="name@company.com" required></input><br>
+                    </div>
+                    <div class="input">
+                        <label for="number">Phone Number</label><br>
+                        <input class="inBox" type="number" minlength="10" name="number" maxlength="10" id="number" required></input><br>
+                    </div>
+                    <div class="input">
+                        <label for="pWord">Password</label><br>
+                        <input class="inBox" type="password" id="pWord" name="pWord" required></input><br>
+                    </div>
+                    <div class="input">
+                        <label for="pWord2">Confirm Password</label><br>
+                        <input  class="inBox" type="password" id="pWord2" name="pWord2" required></input><br>
+                    </div>
+                </div>
+            </form>
+            <div id="submit">
+                <button onclick="checkPassword(); checkValid();" id="submitBut" class="button-3" type="submit" id="enter">Create Account</button>
+                <p id="notMatch" class="err">Passwords must match</p>
+                <p id="reqFields" class="err">Required fields not yet satisfied</p>
+                <p>Allready have an account? <a class="green" href="">log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

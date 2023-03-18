@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="tickTackToe.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tick Tack Toe</h1>
+
+    <div id="info">
+        <div class="player">
+            <h2 id="player1">Player 1</h2>
+            <input type="text" id="playName1" placeholder="Player 1">
+        </div>
+
+        <div id="gInfo">
+            <button onclick="displayController.reset(), gameBoard.popnames()" id="start">Start</button>
+            <p id="tex">Waiting for game to start</p>
+        </div>
+        
+        <div class="player">
+            <h2 id="player2">Player 2</h2>
+            <input type="text" id="playName2" placeholder="Player 2">
+        </div>
+
+    </div>
+        
+    <div id="bod">
+        <div class="box row1 col1"> </div>
+        <div class="box row1 col2"> </div>
+        <div class="box row1 col3"> </div>
+        <div class="box row2 col1"> </div>
+        <div class="box row2 col2"> </div>
+        <div class="box row2 col3"> </div>
+        <div class="box row3 col1"> </div>
+        <div class="box row3 col2"> </div>
+        <div class="box row3 col3"> </div>
+    </div>
+</body>
+</html>
